@@ -1,0 +1,91 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/*EXERCICIO 1:
+
+int main(){
+    int a = 1, b = 0;
+    for (a > 0; a <=5; a++){
+        b = b+3;
+        printf("%d ", b);
+    }
+    return 0;}
+*/
+/*EXERCICIO 2:
+
+int main(){
+    int a = 1, c = 1, d = 0;
+
+    printf("usando for:\n");
+    if (a<=100){
+    for (a > 0; a <101; a++){
+        printf("%d ", a);
+        }
+    }
+    printf("\n");
+    printf("usando while:\n");
+    if(c<=100){
+        while (c<=100){
+        printf("%d ", c);
+        c++;
+        }
+    }
+    printf("\n");
+    printf("usando do-while:\n");
+    if (d<=100){
+        do{
+        d = d+1;
+        printf("%d ",d);
+        }while(d<100);
+    }
+return 0;}
+*/
+/* EXERCICIO 3:
+int main(){
+    int a=10;
+    while(a >=0){
+        printf("%d ",a);
+    a--;
+    }
+    printf("FIM!");
+return 0;}
+*/
+/*EXERCICIO 4:
+int main (){
+    int a = 0;
+    while (a<100000){
+        a = a+1000;
+        printf("%d ", a);
+    }
+return 0;}
+*/
+/*EXERCICIO 5:
+int main(){
+    int valor, soma;
+    int contador;
+    soma = 0;
+    contador = 1;
+    while(contador<=10){
+        printf("\nDigite o %do. numero: ", contador);
+        scanf("%d", &valor);
+        soma = soma + valor;
+        contador ++;
+    }
+    printf("\nO resultado da soma eh %d", soma);
+return 0;}
+*/
+/* EXERCICIO 6:
+int main (){
+    int valor, media;
+    int contador;
+    media = 0;
+    contador = 1;
+    while(contador<=10){
+        printf("\nDigite o %do. numero: ", contador);
+        scanf("%d", &valor);
+        media = media + valor;
+        contador ++;}
+    media = media/10;
+    printf("\nA media dos termos eh: %d\n", media);
+return 0;}
+*/
