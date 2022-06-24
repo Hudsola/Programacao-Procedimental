@@ -1,0 +1,59 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+/*EXERCICIO 1:
+    struct horario{
+    int hora;
+    int minutos;
+    int segundos;
+    };
+    typedef struct horario horario;
+
+    struct data{
+    int dia;
+    int mes;
+    int ano;
+    };
+    typedef struct data data;
+
+    struct compromisso{
+    char texto[300];
+    };
+    typedef struct compromisso compromisso;
+
+    void main(){
+    data dt;
+    horario hr;
+    compromisso c;
+    }
+    */
+//EXERCICIO 2: NOME NUM MATRICULA CURSO
+    struct cadastro{
+        char nome[50];
+        int num_matricula;
+        char curso[50];
+    };
+    typedef struct cadastro cadastro;
+int main(){
+    cadastro c[4];
+    int i, j;   // contadores
+    for(i=0; i<5; i++){
+    fflush(stdin);
+    printf("\nNome: \n");
+    gets(c[i].nome);
+    printf("\nNumero de matricula: \n");
+    scanf("%d",&c[i].num_matricula);
+    printf("\nCurso: \n");
+    fflush(stdin);
+    gets(c[i].curso);
+    }
+    for (j=0; j<5; j++){
+        printf("\n%s \n", c[j].nome);
+        printf("\n%d \n", c[j].num_matricula);
+        printf("\n%s \n", c[j].curso);
+    }
+    system("pause");
+
+    return 0;
+}
