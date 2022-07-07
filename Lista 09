@@ -1,0 +1,46 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/*  EXERCICIO 5:
+
+int simplifica (int a, int b){
+
+    while (b!=0){
+       int resto;
+       resto = a%b;
+       a=b;
+       b=resto;
+    }
+    printf(" O MDC da fracao eh: %d", a);
+    return a;
+}
+
+int main(){
+    int mdc, a, b;
+    printf("Digite o Numerador e Denominador da fracao: \n");
+    scanf("%d %d", &a, &b);
+    mdc = simplifica(a, b);
+    printf(" O MDC da fracao eh: %d", mdc);
+    return 0;
+}
+*/
+void ParImpar(int x[30], int A[30], int B[30], int aux, int aux2){
+    for(x=0; x<30; x++){
+        int resto;
+        resto = x[0]%2;
+        if(resto == 0){
+            A=x;
+        }
+        else
+            B=x;
+    }
+}
+int main(){
+    int x[30], a[30], b[30];
+    printf("Digite o valor dos paramentros: \n");
+    for(x=0; x<30; x++){
+        scanf("%d", &x);
+    }
+    int ParImpar(x, a, b);
+    printf("Vetor x: %d \nVetor a: %d \nVetor b: %d \n", x,a,b);
+return 0;}
